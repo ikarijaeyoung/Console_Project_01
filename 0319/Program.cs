@@ -9,6 +9,8 @@
         }
         static void Main(string[] args)
         {
+            // 3월 20일자 붙여넣기 완료
+
             bool gameOver = false;
             char[,] map;
             Position playerPos;
