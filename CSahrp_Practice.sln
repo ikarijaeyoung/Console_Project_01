@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0324_Practice", "0324_Pract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0325_Practice_Inheritance", "0325_Practice_Inheritance\0325_Practice_Inheritance.csproj", "{7C12EA77-3B53-4026-891E-374B4DA2665F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0326_practice_interface", "0326_practice_interface\0326_practice_interface.csproj", "{F43BE711-47AD-43A7-A2B0-CB129A8FEFBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7C12EA77-3B53-4026-891E-374B4DA2665F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C12EA77-3B53-4026-891E-374B4DA2665F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C12EA77-3B53-4026-891E-374B4DA2665F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43BE711-47AD-43A7-A2B0-CB129A8FEFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43BE711-47AD-43A7-A2B0-CB129A8FEFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43BE711-47AD-43A7-A2B0-CB129A8FEFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43BE711-47AD-43A7-A2B0-CB129A8FEFBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
