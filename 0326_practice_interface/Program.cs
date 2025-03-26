@@ -11,36 +11,38 @@
 
         public interface IInteractive
         {
-            public void interaction();
+            public void Interaction();
         }
 
         public class Player
         {
             public void Interaction()
             {
-
+                // 여기를 잘 모르겠음
             }
         }
 
         public class NonPlayerCharacter : IInteractive
         {
-            public void interaction()
+            public virtual void Interaction()
             {
                 // 대화하기
+                Console.WriteLine("안녕하세요.");
             }
         }
 
         public class Merchant : NonPlayerCharacter
         {
-            public void Interraction()
+            public override void Interraction()
             {
                 // 상점열기
+                Console.WriteLine("상점열기");
             }
         }
 
         public class Chest : IInteractive
         {
-            public void interaction()
+            public void Interaction()
             {
                 // 아이템 습득
             }
@@ -48,7 +50,7 @@
 
         public class Door : IInteractive
         {
-            public void interaction()
+            public void Interaction()
             {
                 // 입장
             }
@@ -57,7 +59,17 @@
 
         static void Main(string[] args)
         {
-            
+            NonPlayerCharacter nonPlayerCharacter = new NonPlayerCharacter();
+            Merchant merchant = new Merchant();
+            Chest chest = new Chest();
+            Door door = new Door();
+
+            Player player = new Player();
+
+            player.Interaction(nonPlayerCharacter);
+            player.Interaction(merchant);
+            player.Interaction(chest);
+            player.Interaction(door);
         }
     }
 }
