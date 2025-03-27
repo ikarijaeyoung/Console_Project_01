@@ -32,8 +32,10 @@
             // 착용
             public void Equip(Armor armor)
             {
+                Console.WriteLine("플레이어가 장비를 착용합니다.");
                 this.armor = armor;
                 defense += armor.Defense;
+                Console.WriteLine("플레이어의 방어력이 {0} 이 되었습니다.", defense);
 
                 OnTakeDamaged += armor.TakeDamage;
                 armor.OnBreaked += UnEquip;
@@ -44,12 +46,14 @@
             {
                 if (armor != null)
                 {
+                    Console.WriteLine("플레이어가 장비를 해제합니다.");
                     armor.OnBreaked -= UnEquip;
                     OnTakeDamaged -= armor.TakeDamage;
 
 
                     defense -= armor.Defense;
                     this.armor = null;
+                    Console.WriteLine("플레이어의 방어력이 {0} 이 되었습니다.", defense);
                 }
             }
 
@@ -67,7 +71,9 @@
             public event Action OnBreaked;
             public void TakeDamage()
             {
+                Console.WriteLine("장비가 내구도가 닳습니다.");
                 durability--;
+                Console.WriteLine("장비의 내구도가 {0} 이 되었습니다.", durability);
                 if (durability <= 0)
                 {
                     Break();
@@ -76,7 +82,7 @@
 
             private void Break()
             {
-                Console.WriteLine("부셔짐");
+                Console.WriteLine("갑옷 부셔짐");
 
                 OnBreaked.Invoke();
             }
